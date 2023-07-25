@@ -1,0 +1,54 @@
+body {
+  display: grid;
+  place-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.wrapper {
+  width: 200px;
+  height: 200px;
+
+  position: relative;
+  color: rgb(239, 243, 244);
+}
+
+.border1 {
+  position: absolute;
+  border-style: solid;
+  z-index: 1;
+
+  border-width: 0.8125rem;
+  top: 0;
+  left: calc(50% - 29px);
+
+  width: 25px;
+  height: 87%;
+  transform: skew(35deg);
+  background-color: black;
+}
+
+.border2,
+.border3 {
+  position: absolute;
+  border-style: solid;
+
+  width: 0;
+  border-width: 7px;
+  height: 5.625rem;
+
+  transform: skew(-41deg);
+  background: currentColor;
+}
+
+.border2 {
+  top: 0;
+  right: calc(50% - 43px);
+}
+
+.border3 {
+  bottom: 0;
+  left: calc(50% - 54px);
+}
